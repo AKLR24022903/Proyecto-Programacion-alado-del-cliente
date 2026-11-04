@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
-
+/* fuente para la letra de google*/
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #f1f5f9;
@@ -8,16 +8,16 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* division de la pàgina*/
     gap: 20px;
 }
 
 #trabajo {
     grid-column: 1 ; /*Junta columna con la siguiente seccion*/
-    text-align: center;
+    text-align: center; /* Alineación del texto*/
     font-size: 25 px;
     color: #f2f3f5;
-    border-radius: 16px;
+    border-radius: 16px;/* redondeo*/
     background: linear-gradient(135deg, #151149, #08517c);
 }
 
@@ -37,7 +37,7 @@ body {
 
 .razones, .requisitos {
     background: white;
-    padding: 24px;
+    padding: 24px; /* espacio interno*/
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
 }
@@ -65,7 +65,7 @@ span {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse;/* propio espacio en tablas*/
     margin-top: 10px;
     border: none;
 }
