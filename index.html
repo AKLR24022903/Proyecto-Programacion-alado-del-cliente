@@ -5,73 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Mi trabajo de sueños</title>
+    <title>Registro de la persona Usuaria</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 </head>
 
 <body>
-    <h1 id="trabajo">Mi trabajo de sueños</h1>
-    <div class="descripcion"><!--Descripción del trabajo -->
-        <h2>Desarrolladora Full stack</h2>
-        <p> Front-End (Cliente): Diseña y construye lo que el usuario ve e interactúa (botones, formularios, menús) usando tecnologías como HTML, CSS, JavaScript y frameworks como React, Angular o Vue.js.<br>
-            Back-End (Servidor): Programa la lógica de negocio, la autenticación, las APIs y la conexión con el servidor utilizando lenguajes como Node.js, Python, Java o PHP</p>
-    </div>
-    <div class="razones">
-        <h2>Razones</h2>
-        <p>Meditando esta pregunta, puedo decir que me gusta la logica
-            de programación, el entidimiento de los lenguajes y el uso de las api's, además
-            del uso de las bases de datos y lo que implica un servidor. <br>
-            <span>Me considero una persona autodidacta y resiliente que me llevara a aprender mucho de este
-                mundo</span><br>
-            En forma de lista se resume:
-        </p>
-        <ul>
-            <li>Poder explorar la creación de una página</li>
-            <li>Relación vida y trabajo o home office</li>
-            <li>Uso de nuevas herramientas como vibecoding</li>
-            <li>Salarios altos si se cuenta con experiencia</li>
-            <li>Trabajar con distintas personas o internacional</li>
-            <li>La programacióm</li>
-        </ul>
-    </div>
-    <div class="requisitos">
-        <h2>Requisitos</h2>
-        <p><b>Los requisitos para este empleo son:</b></p>
-        <table border="1">
-            <thead>
-                <th>Requisito</th>
-                <th>Descripción</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Portafolio con proyectos reales end-end</td>
-                    <td>Portafolio donde demuestre proyectos donde se lleve ambas
-                        partes (Frontend y backend)</td>
-                </tr>
-                <tr>
-                    <td> Control de versiones(Git y Github)</td>
-                    <td>Manejo de comandos básicos de GIT como pull, commint, clone, status, add, push. </td>
-                </tr>
-                <tr>
-                    <td>Programacion en lenguajes(html,css, javascrip, ruby, python)</td>
-                    <td>Conocimiento solido en lenguajes tanto para el diseño como para arquitectura web</td>
-                </tr>
-                <tr>
-                    <td> Bases de datos y almacenamiento web</td>
-                    <td>Almacenamiento en la nube, respaldo de servidores y bases de datos, así como su gestión.</td>
-                </tr>
-                <tr>
-                    <td>HTTP y APIS</td>
-                    <td>Conceptos de seguridad, cifrado y conexión, mantenimiento de APIS </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="Referencias">
-        <img src="images.jpg" alt="Desarrolladora de software" />
-        <p>Obtenido de: <a
-                href="https://mx.indeed.com/orientacion-profesional/como-encontrar-empleo/que-hace-desarrollador-front-end">que-hace-desarrollador-front-end</a>
-        </p>
-    </div>
+    
+    <form>
+        <h1>Registro de la persona usuaria</h1>
+        <div id="datos">
+            <h2>Ingrese datos</h2>
+            <ul>
+                <li><label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" />
+                </li> <!--Nombre-->
+
+                <li>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" />
+                </li> <!--Apellido-->
+                <li>
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" />
+                </li> <!--Correo-->
+
+                <li>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" />
+                </li><!--Contraseña-->
+            </ul>
+        </div>
+        <div id="descripcion">
+            <h2> Introduzca una breve descripción</h2>
+            <label id="descripcion"> Descripción</label>
+            <textarea id="descripcion" name="descripcion"></textarea>
+        </div>
+        <div id="interes">
+            <h2>Selecciona interés</h2>
+
+            <label for="Tecnología">Tecnología:</label>
+            <input type="checkbox" checked id="Tecnología">
+            <label for="Arte">Arte:</label>
+            <input type="checkbox" checked id="Arte">
+            <label for="Deporte">Deporte:</label>
+            <input type="checkbox" checked id="Deporte">
+            <label for="Cocina">Cocina:</label>
+            <input type="checkbox" checked id="Cocina">
+        </div>
+        <div id="diapreferente">
+            <h2>Escoje un día de preferencia</h2>
+            <label for="martes">Martes</label>
+            <input type="radio" name="diapreferente" id="martes"  value="Martes">
+
+            <label for="miercoles">Miercoles</label>
+            <input type="radio" name="diapreferente" id="miercoles" value="Miercoles">
+
+            <label for="jueves">Jueves</label>
+            <input type="radio" name="diapreferente" id="jueves" value="Jueves">
+        </div>
+        <div id="botonRegistro">
+            <input type="submit" value="Registrarse"/>
+
+        </div>
+
+    </form>
 </body>
 
 </html>
