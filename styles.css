@@ -1,4 +1,4 @@
-
+/* --- 1. RESET Y BASE --- */
 * {
   margin: 0;
   padding: 0;
@@ -47,18 +47,16 @@ label {
 }
 
 /* Informacion a llenar */
-#datos ul {
-    
+#datos {
     display:flex ;
     flex-direction: column;
     padding: 0;
     margin:0;
 }
 
-#datos ul li {
-  list-style: none;
+#datos {
   margin-bottom: 20px;
-  width: 80%;
+  width: 100%;
 }
 
 /* Campos de entrada de texto e insumos del formulario */
@@ -67,7 +65,7 @@ input[type="email"],
 input[type="password"],
 textarea {
   width: 100%;
-  padding: 10px 14px;
+  padding: 14px 10px;
   background-color: #103f31;
   border: 2px solid #23755E;
   border-radius: 6px;
